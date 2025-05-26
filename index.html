@@ -1,28 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Koinot nodir diki</title>
-<link rel=stylesheet href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Resource Template</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="sun">
-      <img src="./images/sun.png" alt="sun">
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="Resource Logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="#">RESOURCE CENTER</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">FEATURED</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <form class="search-form">
+          <input type="text" placeholder="Search website...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="resource-badge">
+      <span>RESOURCE</span>
     </div>
-    <div class="mercury"></div>
-    <div class="venus"></div>
-    <div class="earth">
-      <div class="moon"></div>
-    </div>
-    <div class="mars"></div>
-    <div class="jupiter"></div>
-    <div class="saturn"></div>
-    <div class="uranus"></div>
-    <div class="neptune"></div>
-    <div class="pluto">
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          The <span class="highlight">most complete</span><br>
+          Photography resource.
+        </h1>
+        <p class="subtitle">
+          Welcome at Template Resource. This template is packed with useful features to build out your own resource website.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-primary">Visit our Blog<br><span>Stories, News & Info</span></a>
+          <a href="#" class="btn-secondary">Resource Center<br><span>Tips, Tricks & Tutorials</span></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="photographer.jpg" alt="Photographer on rocks">
+      </div>
+    </section>
+
+    <section class="help-links">
+      <div class="help-text">
+        <span>How can we help you?</span>
+      </div>
+      <ul class="help-list">
+        <li><a href="#">Visit our Blog</a></li>
+        <li><a href="#">Photographers Resources Library</a></li>
+        <li><a href="#">Featured Stories</a></li>
+        <li><a href="#">Get Full Access Today!</a></li>
+      </ul>
+    </section>
+
+    <section class="writers">
+      <div class="writers-box">
+        <h2>Meet our Writers</h2>
+        <p>We've got a professional team of professional photographers providing you with resources.</p>
+        <div class="writer-avatars">
+          <img src="writer1.jpg" alt="Writer 1">
+          <img src="writer2.jpg" alt="Writer 2">
+          <img src="writer3.jpg" alt="Writer 3">
+        </div>
+        <a href="#" class="btn-team">meet our team</a>
+      </div>
+    </section>
+    
+  </main>
+</body>
 </html>
