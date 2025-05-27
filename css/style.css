@@ -57,7 +57,7 @@ body {
 .main-header .resource-badge {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -10px;
   transform: translateX(-50%);
   background: #ff6f40;
   color: #fff;
@@ -69,6 +69,7 @@ body {
 }
 
 .hero {
+  background-image: url(../images/IMAGE\ \(48\).svg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,13 +130,15 @@ body {
   color: #00c6ad;
 }
 .hero .hero-image {
-  flex: 1;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 .hero .hero-image img {
-  max-width: 400px;
+  background-image: url(../images/IMAGE\ \(48\).svg);
+  max-width: 480px;
   width: 100%;
+  margin-top: -20px;
   border-radius: 16px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -152,6 +155,10 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
   min-width: 180px;
+  line-height: 1.4;
+}
+.help-links .help-text span {
+  display: block;
 }
 .help-links .help-list {
   list-style: none;
@@ -178,12 +185,12 @@ body {
   margin-right: 2rem;
 }
 .writers .writers-box {
+  background-image: url(../images/IMAGE\ \(54\).svg);
   background: #2d2467;
   color: #fff;
   padding: 2.2rem 2rem 2rem 2rem;
   border-radius: 16px;
   max-width: 350px;
-  box-shadow: 0 4px 24px rgba(45, 36, 103, 0.12);
 }
 .writers .writers-box h2 {
   font-size: 1.4rem;
@@ -259,7 +266,7 @@ body {
   position: absolute;
   right: 2rem;
   bottom: 2rem;
-  background: #2d2467 url("pattern.svg") repeat;
+  background-image: url(../images/IMAGE\ \(54\).svg);
   color: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(45, 36, 103, 0.12);
@@ -299,10 +306,594 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  transition: background 0.2s;
+  transition: 0.2s;
 }
 .writers-card .writers-content .btn-team:hover {
   background: #009380;
+}
+
+.blog-posts {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.blog-posts .post {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.blog-posts .post:hover {
+  transform: scale(1.02);
+}
+.blog-posts .post img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-posts .post h3, .blog-posts .post h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.blog-posts .post p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+.blog-posts .post .author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.blog-posts .post .author-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-posts .post .author-info span {
+  font-size: 0.9rem;
+  color: #333;
+}
+.blog-posts .large-post {
+  flex-basis: calc(66.66% - 10px);
+  min-width: 0;
+}
+.blog-posts .large-post img {
+  height: 300px;
+}
+.blog-posts .small-post {
+  flex-basis: calc(33.33% - 10px);
+  min-width: 0;
+}
+.blog-posts .small-post .post-content {
+  padding: 10px;
+}
+.blog-posts .small-post .post-content p:first-of-type {
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+.blog-posts .small-post .post-content h4 {
+  margin-bottom: 10px;
+}
+.blog-posts .small-post .post-content .visit-blog {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #000033;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.blog-posts .small-post .post-content .visit-blog:hover {
+  background-color: #000066;
+}
+
+.blog-section {
+  padding: 4rem 1rem;
+  background: #f9f9fb;
+}
+.blog-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blog-section .blog-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+}
+.blog-section .blog-title .highlight {
+  color: #ff6f40;
+}
+.blog-section .blog-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .blog-section .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.blog-section .blog-featured {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+.blog-section .blog-featured img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+.blog-section .blog-featured h3 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+.blog-section .blog-featured p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.blog-section .blog-featured .author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.blog-section .blog-featured .author-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-section .blog-featured .author-info strong {
+  display: block;
+  color: #1a1a1a;
+}
+.blog-section .blog-featured .author-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+.blog-section .blog-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.blog-section .blog-side > img {
+  width: 100%;
+  border-radius: 12px;
+}
+.blog-section .blog-side .blog-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.blog-section .blog-side .blog-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.blog-section .blog-side .blog-card span {
+  font-size: 0.85rem;
+  color: #999;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.blog-section .blog-side .blog-card h4 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+.blog-section .blog-side .blog-link-card {
+  background-image: url(../images/IMAGE\ \(54\).svg);
+  color: #fff;
+  text-align: center;
+}
+.blog-section .blog-side .blog-link-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.blog-section .blog-side .blog-link-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+.blog-section .blog-side .blog-link-card a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #ff6f40;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.buy-now {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.instant-access {
+  text-align: center;
+}
+
+.instant-access h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.instant-access p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tulki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  background: #1f1f4d;
+  color: white;
+}
+.tulki .bori {
+  width: 530px;
+  height: 37 0px;
+  background: #3a2e7c;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.tulki .bori h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.tulki .bori p {
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.tulki .bori .quyon {
+  gap: 205px;
+  display: inline-block;
+  background: #33df8f;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.tulki .ilon {
+  margin-left: 2rem;
+}
+.tulki .ilon img {
+  width: 100%;
+  height: 660px;
+  border-radius: 12px;
+}
+
+.burgut {
+  background-image: url(../images/IMAGE\ \(54\).svg);
+  background-size: cover;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.burgut h2 {
+  font-size: 28px;
+  margin-bottom: 2rem;
+  color: white;
+}
+.burgut .qoplon {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.burgut .arxiv {
+  background: white;
+  padding: 2rem;
+  max-width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.burgut .arxiv h3 {
+  margin-bottom: 1rem;
+}
+.burgut .arxiv .narx {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.burgut .arxiv .narx span {
+  font-size: 16px;
+  color: gray;
+}
+.burgut .arxiv ul {
+  list-style: none;
+  padding: 0;
+}
+.burgut .arxiv ul li {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+.burgut .arxiv .quyon {
+  background-color: #33df8f;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.burgut .arxiv .quyon--qizil {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #f36c4f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.tovus {
+  background: #1f1f4d;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.tovus a {
+  color: #66ccff;
+  text-decoration: underline;
+}
+
+.tesla {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #f8f8f8;
+}
+.tesla .bmw h2 {
+  font-size: 1.8rem;
+}
+.tesla .bmw h2 span.audi {
+  color: #23c686;
+}
+.tesla .bmw .merc {
+  position: relative;
+  margin-top: 1rem;
+}
+.tesla .bmw .merc .volvo {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+.tesla .bmw .merc .kia {
+  position: absolute;
+  width: 276px;
+  height: 200px;
+  top: 234px;
+  left: -60px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 220px;
+}
+.tesla .bmw .merc .kia .honda {
+  color: #5f51e8;
+  font-weight: bold;
+}
+.tesla .bmw .merc .kia .ford {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+.tesla .bmw .merc .kia .jeep {
+  font-size: 0.8rem;
+  color: #999;
+}
+.tesla .bmw .merc .fiat {
+  padding-right: 500px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #23c686;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tesla .lambo {
+  flex: 1;
+  margin-left: 2rem;
+}
+.tesla .lambo h3 {
+  font-size: 1.4rem;
+}
+.tesla .lambo h3 span.audi {
+  color: #23c686;
+}
+.tesla .lambo .bugatti .dodge {
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #23c686;
+  padding-left: 1rem;
+}
+.tesla .lambo .bugatti .dodge .subaru {
+  color: #5f51e8;
+  font-weight: bold;
+}
+.tesla .lambo .bugatti .dodge a {
+  color: #5f51e8;
+  font-size: 0.85rem;
+}
+.tesla .lambo .bugatti .dodge .bmw-red {
+  color: #ff5b5b;
+  font-weight: bold;
+}
+
+.toyota {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+}
+.toyota h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.toyota h3 {
+  font-size: 1.4rem;
+}
+.toyota h3 span.audi {
+  color: #23c686;
+}
+.toyota .mazda {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.toyota .mazda .lexus {
+  padding: 0.5rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.toyota .mazda .fiat {
+  background-color: #23c686;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.toyota .nissan {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.toyota .nissan .daihatsu {
+  min-width: 250px;
+  background: #f4f4f4;
+  width: 300px;
+  height: 296px;
+  left: 650px;
+  border-radius: 10px;
+}
+.toyota .nissan .daihatsu h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.toyota .nissan .daihatsu ul {
+  color: #F55F39;
+  list-style: none;
+  padding: 0;
+}
+.toyota .nissan .daihatsu ul li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.toyota .nissan .daihatsu a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #5f51e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mclaren {
+  background: #1c1038 url("background-pattern.png");
+  color: white;
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+.mclaren .acura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.mclaren .acura .logo-section {
+  padding-right: 900px;
+  max-width: 400px;
+}
+.mclaren .acura .logo-section .logo {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+.mclaren .acura .logo-section p {
+  font-size: 0.95rem;
+  color: #d8d8d8;
+}
+.mclaren .acura .links-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.mclaren .acura .links-section .section h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.mclaren .acura .links-section .section ul {
+  list-style: none;
+  padding: 0;
+}
+.mclaren .acura .links-section .section ul li {
+  margin: 0.5rem 0;
+}
+.mclaren .acura .links-section .section ul li a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.mclaren .acura .links-section .section ul li a:hover {
+  color: #23c686;
+}
+.mclaren .bug {
+  padding-left: 150px;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+.mclaren .bug .studio {
+  color: #ff5b5b;
+}
+.mclaren .bug .webflow {
+  color: #23c686;
+}
+.mclaren .bug a {
+  color: #ff5b5b;
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
