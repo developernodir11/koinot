@@ -86,8 +86,7 @@ body {
     left: 50%;
     top: -10px; 
     transform: translateX(-50%);
-    background: $accent;
-    color: $light;
+
     padding: 0.7rem 2rem;
     border-radius: 0 0 8px 8px;
     font-weight: bold;
@@ -235,7 +234,7 @@ body {
     background: #2d2467;
     color: $light;
     padding: 2.2rem 2rem 2rem 2rem;
-    border-radius: 16px;
+
     max-width: 350px;
 
     h2 {
@@ -265,12 +264,9 @@ body {
     .btn-team {
       background: $primary;
       color: $light;
-      padding: 0.7rem 1.4rem;
-      border-radius: 6px;
-      text-decoration: none;
+        text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
-      transition: background 0.2s;
 
       &:hover {
         background: darken($primary, 10%);
@@ -351,7 +347,7 @@ body {
       margin-bottom: 1.3rem;
 
       img {
-        width: 44px;
+        width: 100%;
         height: 44px;
         border-radius: 50%;
         object-fit: cover;
@@ -360,6 +356,7 @@ body {
     }
 
     .btn-team {
+      border-radius: 16px;
       display: inline-block;
       background: #00c6ad;
       color: #fff;
@@ -572,7 +569,7 @@ body {
       background: #fff;
       padding: 1.2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
 
       img {
         width: 100%;
@@ -623,7 +620,7 @@ body {
 .buy-now {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2ecc71; /* Green color */
+  background-color: #2ecc71; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -650,7 +647,7 @@ body {
 .learn-more {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2ecc71; /* Green color */
+  background-color: #2ecc71; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -661,14 +658,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem;
   background: #1f1f4d;
   color: white;
 
   .bori {
     
-    width: 530px;
-height: 37  0px;
+    max-width:530px;
+    max-height: 370px;
 
     background: #3a2e7c;
     padding: 2rem;
@@ -796,7 +792,7 @@ background-image: url(../images/IMAGE\ \(54\).svg);
     text-decoration: underline;
   }
 }
-// SCSS Styling
+
 
 .tesla {
   display: flex;
@@ -1062,7 +1058,7 @@ padding-right: 900px;
   }
 }
 
-// Responsive styles
+
 @media (max-width: 1024px) {
   .writers-card {
     position: static;
@@ -1085,10 +1081,6 @@ padding-right: 900px;
     .writers-content h2 {
       font-size: 1.1rem;
     }
-    .writers-content .btn-team {
-      font-size: 0.95rem;
-      padding: 0.6rem 1rem;
-    }
   }
   .help-section {
     padding: 1.2rem 0.5rem 0 0.5rem;
@@ -1101,7 +1093,6 @@ padding-right: 900px;
   }
 }
 
-// Responsive Design
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;

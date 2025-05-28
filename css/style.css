@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   font-family: "Inter", Arial, sans-serif;
   margin: 0;
   background: #f5f5f5;
@@ -59,8 +60,6 @@ body {
   left: 50%;
   top: -10px;
   transform: translateX(-50%);
-  background: #ff6f40;
-  color: #fff;
   padding: 0.7rem 2rem;
   border-radius: 0 0 8px 8px;
   font-weight: bold;
@@ -189,7 +188,6 @@ body {
   background: #2d2467;
   color: #fff;
   padding: 2.2rem 2rem 2rem 2rem;
-  border-radius: 16px;
   max-width: 350px;
 }
 .writers .writers-box h2 {
@@ -216,12 +214,9 @@ body {
 .writers .writers-box .btn-team {
   background: #00c6ad;
   color: #fff;
-  padding: 0.7rem 1.4rem;
-  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  transition: background 0.2s;
 }
 .writers .writers-box .btn-team:hover {
   background: #009380;
@@ -290,7 +285,7 @@ body {
   margin-bottom: 1.3rem;
 }
 .writers-card .writers-content .writers-avatars img {
-  width: 44px;
+  width: 100%;
   height: 44px;
   border-radius: 50%;
   -o-object-fit: cover;
@@ -298,6 +293,7 @@ body {
   border: 2px solid #fff;
 }
 .writers-card .writers-content .btn-team {
+  border-radius: 16px;
   display: inline-block;
   background: #00c6ad;
   color: #fff;
@@ -480,7 +476,6 @@ body {
   background: #fff;
   padding: 1.2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 .blog-section .blog-side .blog-card img {
   width: 100%;
@@ -522,7 +517,7 @@ body {
 .buy-now {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2ecc71; /* Green color */
+  background-color: #2ecc71;
   color: white;
   border: none;
   border-radius: 5px;
@@ -549,7 +544,7 @@ body {
 .learn-more {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2ecc71; /* Green color */
+  background-color: #2ecc71;
   color: white;
   border: none;
   border-radius: 5px;
@@ -561,13 +556,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem;
   background: #1f1f4d;
   color: white;
 }
 .tulki .bori {
-  width: 530px;
-  height: 37 0px;
+  max-width: 530px;
+  max-height: 370px;
   background: #3a2e7c;
   padding: 2rem;
   border-radius: 12px;
@@ -917,10 +911,6 @@ body {
   }
   .writers-card .writers-content h2 {
     font-size: 1.1rem;
-  }
-  .writers-card .writers-content .btn-team {
-    font-size: 0.95rem;
-    padding: 0.6rem 1rem;
   }
   .help-section {
     padding: 1.2rem 0.5rem 0 0.5rem;
